@@ -14,13 +14,25 @@ function fillTasks(data) {
         taskPerson.innerHTML = `<span>Responsable:</span> ${d.person}`;
 
         let taskDeadLine = document.createElement('p');
-        taskDeadLine.innerHTML = `<span>Plazo:</span> ${d.deadLine}`;
+        taskDeadLine.innerHTML = `<span>Entrega:</span> ${d.deadLine}`;
 
         newTask.appendChild(taskTitle);
         newTask.appendChild(taskPerson);
         newTask.appendChild(taskDeadLine);
 
-        let column = document.getElementById("doneTasks");
-        column.appendChild(newTask);
+        let columnTodo = document.getElementById("todoTasks");
+        let columnInProgress = document.getElementById("progressTasks");
+        let columnDone = document.getElementById("doneTasks");
+
+        if(d.state === "to-do"){
+            columnTodo.appendChild(newTask);
+        }
+        if(d.state === "in-progress"){
+            columnInProgress.appendChild(newTask);
+        }
+        if(d.state === "done"){
+            columnDone.appendChild(newTask);
+        }
+
     });
 }

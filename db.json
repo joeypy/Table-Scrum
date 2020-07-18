@@ -1,6 +1,6 @@
 {
   "task": [
-    { "id": 1, "title": "Post 1", "person": "Lucas", "state": "to-do", "deadLine": 1589987573, "created": 1589987573 },
+    { "id": 1, "title": "Post 1", "person": "Lucas", "state": "done", "deadLine": 1589987573, "created": 1589987573 },
     { "id": 2, "title": "Post 2", "person": "Pedro", "state": "in-progress", "deadLine": 1589987573, "created": 1589987573 },
     { "id": 3, "title": "Post 3", "person": "Maria", "state": "to-do", "deadLine": 1589987573, "created": 1589987573 }
   ]

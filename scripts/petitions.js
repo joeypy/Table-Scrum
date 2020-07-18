@@ -19,7 +19,7 @@ function fillTasks(data) {
         taskPerson.innerHTML = `<span>Responsable:</span> ${d.person}`;
 
         let taskDeadLine = document.createElement('p');
-        taskDeadLine.innerHTML = `<span>Entrega:</span> ${unixToDate(d.deadLine)}`;
+        taskDeadLine.innerHTML = `<span>Entrega:</span> ${unixToDate(d.deadline)}`;
 
         newTask.appendChild(taskTitle);
         newTask.appendChild(taskPerson);

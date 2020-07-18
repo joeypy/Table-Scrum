@@ -1,7 +1,10 @@
 const API_URL = "https://my-json-server.typicode.com/joeypy/Table-Scrum/task";
 
 axios.get(API_URL)
-    .then( resp => fillTasks(resp.data))
+    .then( resp => {
+        fillTasks(resp.data);
+        randomColors();
+    })
     .catch( err => console.log(err));
 
 function fillTasks(data) {
@@ -14,7 +17,7 @@ function fillTasks(data) {
         taskPerson.innerHTML = `<span>Responsable:</span> ${d.person}`;
 
         let taskDeadLine = document.createElement('p');
-        taskDeadLine.innerHTML = `<span>Entrega:</span> ${d.deadLine}`;
+        taskDeadLine.innerHTML = `<span>Entrega:</span> ${unixToDate(d.deadLine)}`;
 
         newTask.appendChild(taskTitle);
         newTask.appendChild(taskPerson);
@@ -36,3 +39,4 @@ function fillTasks(data) {
 
     });
 }
+

@@ -1,4 +1,5 @@
-const API_URL = "https://my-json-server.typicode.com/joeypy/Table-Scrum/task";
+// const API_URL = "https://my-json-server.typicode.com/joeypy/Table-Scrum/task";
+const API_URL = "https://my-json-server.typicode.com/edteamlat/simplescrum/tasks";
 
 axios.get(API_URL)
     .then( resp => {
@@ -10,6 +11,7 @@ axios.get(API_URL)
 function fillTasks(data) {
     data.map( d => {
         let newTask = document.createElement('article');
+        newTask.classList.add("task");
         let taskTitle = document.createElement('h3');
         taskTitle.innerText = d.title;
 

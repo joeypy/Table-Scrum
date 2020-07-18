@@ -4,7 +4,6 @@ function randomColors() {
     var boxes = document.querySelectorAll("article");
 
     for (i = 0; i < boxes.length; i++) {
-        console.log("caja ", i);
         boxes[i].style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
     }
 }

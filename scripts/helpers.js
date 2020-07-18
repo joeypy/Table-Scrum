@@ -6,8 +6,8 @@ let form = document.getElementById("formElement");
 
 button.addEventListener("click", () => {
     form.classList.add("active");
-})
+});
 
 buttonCancel.addEventListener("click", () => {
     form.classList.remove("active");
-})
+});

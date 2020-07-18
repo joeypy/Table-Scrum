@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="body">
     <header>
         <div class="header-container">
             <img src="/img/logo.png" alt="Logo table scrum">
@@ -49,7 +49,7 @@
     </main>
 
     <!-- Formulario de creación -->
-    <aside class="active" id="formElement">
+    <aside class="" id="formElement">
         <div class="aside-container">
           <h2>Nueva Tarea</h2>
           <div class="form-container">
@@ -94,10 +94,16 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <!-- Moments.js -->
     <script src="https://momentjs.com/downloads/moment.js"></script>
+    <!-- Hammer.js -->
+    <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
+    <!-- Sortable only -->
+    <script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.11/lib/sortable.js"></script>
     <!-- Script personalizado -->
     <script src="/scripts/dates.js"></script>
     <script src="/scripts/randomColors.js"></script>
     <script src="/scripts/helpers.js"></script>
+    <script src="/scripts/gestures.js"></script>
     <script src="/scripts/petitions.js"></script>
+    <script src="/scripts/draganddrop.js"></script>
 </body>
 </html>

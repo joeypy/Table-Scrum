@@ -359,7 +359,7 @@ template {
 body {
     width: 100%;
     height: 100vh;
-    background: #F6F8F9;
+    background: #f3f3f3;
     font-family: sans-serif;
     color: var(--normal-text);
     overflow: hidden;
@@ -505,6 +505,7 @@ main .container h2 {
     text-align: center;
     z-index: 1;
     margin-bottom: 0;
+    font-weight: bold;
 }
 
 .task {
@@ -512,7 +513,7 @@ main .container h2 {
     border-radius: 0.5rem;
     background: #fff;
     cursor: pointer;
-    min-width: 284px;
+    min-width: 250px;
     -webkit-box-shadow: 0 1px 3px 0 rgba(21, 27, 38, 0.15);
     box-shadow: 0 1px 3px 0 rgba(21, 27, 38, 0.15);
     -webkit-transition: -webkit-box-shadow 0.25s;
@@ -531,20 +532,22 @@ main .container h2 {
 }
 
 .task h3 {
-    font-size: 0.875rem;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 .task p {
     font-size: 0.875rem;
     color: var(--dark-text);
-}
-
-.task p:last-of-type {
     margin-bottom: 0;
+    color: white;
+    font-weight: 600;
 }
 
 .task p span {
-    color: var(--light-text);
+    color: white;
+    font-style: italic;
+    font-weight: 100;
 }
 
 .input-container input,
@@ -649,22 +652,14 @@ article {
 
 
 /* Estilos propios adicionales */
-article {
-    padding: 0.5rem 1rem;
-    margin: 0.5rem;
-    /* border: 1px solid black; */
-    border-radius: 20px;
+.task {
     color: white;
-    -webkit-box-shadow: 4px 6px 14px -5px rgba(0, 0, 0, 0.50);
-    -moz-box-shadow: 4px 6px 14px -5px rgba(0, 0, 0, 0.50);
-    box-shadow: 4px 6px 14px -5px rgba(0, 0, 0, 0.50);
+    transition: 0.5s opacity ease;
 }
-
-article:hover {
-    cursor: pointer;
+.task:hover{
     opacity: 0.8;
 }
 
-article h3 {
+.task h3 {
     color: white;
 }
